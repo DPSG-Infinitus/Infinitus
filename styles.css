@@ -181,13 +181,4 @@ body a {
     width: 800px;
 }
 
-@media (max-width: 800px){
-    .video{
-        margin-top: -50px;
-        height: 363px;
-    }
 
-    .main-container{
-        margin-top: -80px;
-    }
-}

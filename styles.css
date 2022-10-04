@@ -180,5 +180,9 @@ body a {
     max-width: 100%;
     width: 800px;
 }
-
+@media (max-width: 800px){
+    .video{
+        margin-top: 100px;
+    }
+}
 

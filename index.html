@@ -6,94 +6,121 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
         <link rel="stylesheet" href="styles.css">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	    <script src="jparticle.jquery.min.js"></script>
         <link rel="icon" type="image/x-icon" href="assets/Asset 5.png">
         <title>Infinitus 2022</title>
     </head>
     <body>
+        <!-- Interactive Particles Background -->
+        <div class="background-1">
+            <div id="particles-js"></div>
+            <script>
+                $(function(){
+                    $("#particles-js").jParticle({
+                        background: "#090a0f00",
+                        color: "#505078"
+                    });
+                });
+                </script>
+                <script type="text/javascript">
+            
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-36251023-1']);
+              _gaq.push(['_setDomainName', 'jqueryscript.net']);
+              _gaq.push(['_trackPageview']);
+            
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+            
+            </script>
 
-       <!-- Top Fixed Bar -->
-       <div class="topnav">
-            <a href="https://www.dpsgs.org/ghaziabad/">
-                <img src="assets/logo-1.svg" alt="Delhi Public school Ghaziabad" class="img-logo">
-            </a>
-       </div>
-
-       <!-- Infinitus Logo -->
-       <div class="infinitus">
-            <img src="assets/Asset 6.png" alt="Infinitus 2022" class="infinitus-logo">
-       </div>
+            <!-- Top Fixed Bar -->
+            <div class="topnav">
+                 <a href="https://www.dpsgs.org/ghaziabad/">
+                     <img src="assets/logo-1.svg" alt="Delhi Public school Ghaziabad" class="img-logo">
+                 </a>
+            </div>
         
-       <!-- Countdown -->
-       <div class="countdown">
-            <div>
-                <p id="day"></p>
-                <span>Days</span>
+            <!-- Infinitus Logo -->
+            <div class="infinitus">
+                 <img src="assets/Asset 6.png" alt="Infinitus 2022" class="infinitus-logo">
             </div>
-            <div>
-                <p id="hour"></p>
-                <span>Hours</span>
-            </div>
-            <div>
-                <p id="min"></p>
-                <span>Minutes</span>
-            </div>
-            <div>
-                <p id="sec"></p>
-                <span>Seconds</span>
+
+            <!-- Countdown -->
+            <div class="countdown">
+                 <div>
+                     <p id="day"></p>
+                     <span>Days</span>
+                 </div>
+                 <div>
+                     <p id="hour"></p>
+                     <span>Hours</span>
+                 </div>
+                 <div>
+                     <p id="min"></p>
+                     <span>Minutes</span>
+                 </div>
+                 <div>
+                     <p id="sec"></p>
+                     <span>Seconds</span>
+                 </div>
+             </div>
+         
+            <script>
+             // Set the date we're counting down to
+             var countDownDate = new Date("Oct 18, 2022 09:00:00").getTime();
+            
+             // Update the count down every 1 second
+             var x = setInterval(function() {
+
+               // Get today's date and time
+               var now = new Date().getTime();
+
+               // Find the distance between now and the count down date
+               var distance = countDownDate - now;
+
+               // Time calculations for days, hours, minutes and seconds
+               var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) ;
+               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) ;
+               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) ;
+               var seconds = Math.floor((distance % (1000 * 60)) / 1000).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) ;
+
+               // Display the result in the element with id="demo"
+               document.getElementById("day").innerHTML = days;
+               document.getElementById("hour").innerHTML = hours;
+               document.getElementById("min").innerHTML = minutes;
+               document.getElementById("sec").innerHTML = seconds;
+
+               // If the count down is finished, write some text
+               if (distance < 0) {
+                 clearInterval(x);
+                 document.getElementById("day").innerHTML = "00";
+                 document.getElementById("hour").innerHTML = "00";
+                 document.getElementById("min").innerHTML = "00";
+                 document.getElementById("sec").innerHTML = "00";
+               }
+             }, 1000);
+             </script>
+
+            <!-- Buttons -->
+            <div class="button">
+                 <a href="https://bit.ly/infinitus2k22">
+                     <button class="button-class" role="button">
+                         Register
+                     </button>
+                 </a>
+                 <a href="#creative-events">
+                     <button class="button-class" role="button" style="margin-left: 24px;">
+                         Events
+                     </button>
+                 </a>
             </div>
         </div>
-
-       <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Oct 18, 2022 09:00:00").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-          // Get today's date and time
-          var now = new Date().getTime();
-        
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-        
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) ;
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) ;
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) ;
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) ;
-        
-          // Display the result in the element with id="demo"
-          document.getElementById("day").innerHTML = days;
-          document.getElementById("hour").innerHTML = hours;
-          document.getElementById("min").innerHTML = minutes;
-          document.getElementById("sec").innerHTML = seconds;
-        
-          // If the count down is finished, write some text
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("day").innerHTML = "00";
-            document.getElementById("hour").innerHTML = "00";
-            document.getElementById("min").innerHTML = "00";
-            document.getElementById("sec").innerHTML = "00";
-          }
-        }, 1000);
-        </script>
-
-       <!-- Buttons -->
-       <div class="button">
-            <a href="https://bit.ly/infinitus2k22">
-                <button class="button-class" role="button">
-                    Register
-                </button>
-            </a>
-            <a href="#creative-events">
-                <button class="button-class" role="button" style="margin-left: 24px;">
-                    Events
-                </button>
-            </a>
-       </div>
-
-       <!-- Teaser -->
+        <!-- Teaser -->
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/kW2vkSQeugg"
              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
@@ -111,7 +138,7 @@
                 video1.addEventListener('mouseout', videoPausePlayHandler, false);
                 video1.addEventListener('mouseover', videoPausePlayHandler, false);
             </script>
-       </div>
+        </div>
 
        <!-- Information Boxes -->
        <div class="main-container">

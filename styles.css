@@ -49,8 +49,10 @@ body a {
     display: flex;
     justify-content: center;
     margin-top: -10px;
-    font-family: 'Crimson Text', serif;
-    margin-left: 50px;
+    font-family:'Gotham Black', sans-serif;
+    margin-left: 10px;
+    font-weight: 1000;
+
 }
 
 .countdown div{
@@ -60,8 +62,108 @@ body a {
 
 .countdown div p {
     font-size: 60px;
-    margin-bottom: -14px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
 
+.countdown div span{
+    padding-left: 25px;
+}
+
+#day{
+    background-image: linear-gradient(
+  180deg,
+  hsl(0deg 100% 60%) 0%,
+  hsl(6deg 100% 59%) 10%,
+  hsl(12deg 100% 57%) 20%,
+  hsl(18deg 100% 56%) 30%,
+  hsl(24deg 100% 55%) 40%,
+  hsl(30deg 100% 54%) 50%,
+  hsl(36deg 100% 52%) 60%,
+  hsl(42deg 100% 51%) 70%,
+  hsl(48deg 100% 50%) 80%,
+  hsl(54deg 100% 48%) 90%,
+  hsl(60deg 100% 47%) 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#hour{
+    background-image: linear-gradient(
+  180deg,
+  hsl(60deg 100% 47%) 0%,
+  hsl(64deg 100% 49%) 10%,
+  hsl(67deg 100% 51%) 20%,
+  hsl(71deg 100% 53%) 30%,
+  hsl(74deg 100% 55%) 40%,
+  hsl(78deg 100% 56%) 50%,
+  hsl(82deg 100% 58%) 60%,
+  hsl(85deg 100% 60%) 70%,
+  hsl(89deg 100% 62%) 80%,
+  hsl(92deg 100% 64%) 90%,
+  hsl(96deg 100% 66%) 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#min{
+    background-image: linear-gradient(
+  180deg,
+  hsl(96deg 100% 66%) 0%,
+  hsl(104deg 100% 63%) 10%,
+  hsl(113deg 100% 61%) 20%,
+  hsl(121deg 100% 59%) 30%,
+  hsl(130deg 100% 57%) 40%,
+  hsl(138deg 100% 55%) 50%,
+  hsl(146deg 100% 52%) 60%,
+  hsl(155deg 100% 50%) 70%,
+  hsl(163deg 100% 48%) 80%,
+  hsl(171deg 100% 45%) 90%,
+  hsl(180deg 100% 43%) 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#sec{
+    background-image: linear-gradient(
+  180deg,
+  hsl(180deg 100% 43%) 0%,
+  hsl(187deg 100% 46%) 10%,
+  hsl(195deg 100% 49%) 20%,
+  hsl(202deg 100% 52%) 30%,
+  hsl(209deg 100% 55%) 40%,
+  hsl(217deg 100% 58%) 50%,
+  hsl(224deg 100% 61%) 60%,
+  hsl(231deg 100% 65%) 70%,
+  hsl(239deg 100% 67%) 80%,
+  hsl(246deg 100% 71%) 90%,
+  hsl(253deg 100% 74%) 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .register{
@@ -206,7 +308,7 @@ body a {
     }
 	
     .countdown{
-        margin-left: 20px;
+        margin-left: 10px;
     }	
 }
 

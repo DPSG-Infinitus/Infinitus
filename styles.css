@@ -77,7 +77,7 @@ canvas {
     justify-content: center;
     margin-top: -10px;
     font-family:'Gotham Black', sans-serif;
-    margin-left: auto;
+    margin: auto;
     font-weight: 1000;
 
 }

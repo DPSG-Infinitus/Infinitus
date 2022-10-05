@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gotham-black');
 
 html{
     scroll-behavior: smooth;
@@ -17,31 +16,37 @@ body a {
 .topnav{
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: #32325A;
     z-index: 1;
     height: 100px;
     top: 0;
     overflow: hidden;
     right: 0;
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+
 }
 
 .img-logo{
-    max-width: 100%;
-    width: 540px; 
+    max-width: 80%;
+    width: 540px;
 }
 
 .infinitus{
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .infinitus-logo {
-    max-width: 100%;
-    width: 500px; 
-    margin-top: 200px;
+    max-width: 80%;
+    width: 720px; 
+    margin-top: 240px;
+    margin-bottom: 120px;
 
   }
 
@@ -91,7 +96,6 @@ background-clip: border-box;
 background-size: 200% auto;
 color: #fff;
 background-clip: text;
-text-fill-color: transparent;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -116,7 +120,6 @@ background-clip: border-box;
 background-size: 200% auto;
 color: #fff;
 background-clip: text;
-text-fill-color: transparent;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -141,7 +144,6 @@ background-clip: border-box;
 background-size: 200% auto;
 color: #fff;
 background-clip: text;
-text-fill-color: transparent;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -166,35 +168,34 @@ background-clip: border-box;
 background-size: 200% auto;
 color: #fff;
 background-clip: text;
-text-fill-color: transparent;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
-.register{
+.button{
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 120px;
 }
 
-.register-button {
+.button-class {
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border: 0;
-    border-radius: 8px;
+    border-radius: 24px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     box-sizing: border-box;
     color: #FFFFFF;
     display: flex;
-    font-family: 'Crimson Text' , serif;
-    font-size: 20px;
+    font-family: 'Gotham medium' , serif;
+    font-size: 48px;
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
     min-width: 140px;
-    padding: 19px 24px;
+    padding: 24px;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
@@ -205,41 +206,10 @@ text-fill-color: transparent;
     text-align: center;
   }
   
-.register-button:active,
-.register-button:hover {
+.button-class:active,
+.button-class:hover {
     outline: 0;
-  }
-
-.register-button-2 {
-    align-items: center;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    border: 0;
-    border-radius: 8px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    display: flex;
-    font-family: 'Crimson Text' , sans-serif;
-    font-size: 20px;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 19px 24px;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    margin-left: 50px;
-  }
-  
-.register-button-2:active,
-.register-button-2:hover {
-    outline: 0;
+    background-image: linear-gradient(144deg,#00DDEB, #5B42F3 50%, #AF40FF);
   }
 
 

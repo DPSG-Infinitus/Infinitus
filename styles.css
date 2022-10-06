@@ -1,37 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gotham-black');
 
 html{
     scroll-behavior: smooth;
+    cursor: url("assets/cursor-02.png");
 }
 
 body{
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
     overflow-x: hidden;
-    text-align: center;	
 }
 
 body a {
     text-decoration: none;
 }
-
-canvas {
-    display: block;
-    vertical-align: bottom;
-    margin-top: 100px;
-  }
-
-.background-1{
-    padding-left: -2px;
-}
-  
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
 
 .topnav{
     position: fixed;
@@ -46,7 +27,9 @@ canvas {
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 10;
+    cursor: url("assets/cursor-02.png");
+    z-index: 5;
+
 
 }
 
@@ -61,6 +44,7 @@ canvas {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 .infinitus-logo {
@@ -68,7 +52,10 @@ canvas {
     width: 720px; 
     margin-top: 240px;
     margin-bottom: 120px;
+    cursor: url("assets/cursor-02.png");
     z-index: 2;
+
+
   }
 
 .countdown{
@@ -77,7 +64,7 @@ canvas {
     justify-content: center;
     margin-top: -10px;
     font-family:'Gotham Black', sans-serif;
-    margin: auto;
+    margin-left: 10px;
     font-weight: 1000;
 
 }
@@ -86,6 +73,7 @@ canvas {
     color: #fff;
     flex-basis: 100px;
     z-index: 2;
+
 }
 
 .countdown div p {
@@ -226,7 +214,6 @@ background-clip: text;
     cursor: pointer;
     position: relative;
     text-align: center;
-    z-index: 2;
   }
   
 .button-class:active,
@@ -240,12 +227,10 @@ background-clip: text;
     position: relative;
     display: flex;
     width: 100%;
+    margin-top: 120px;
+    align-items: center;
     justify-content: center;
-    margin-top: 100px;
-}
-.teaser-vid{
-    max-width: 100%;
-    width: 720px;
+    text-align: center;
 }
 
 .main-container{
@@ -293,26 +278,16 @@ background-clip: text;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    height: 1000px;
 }
 
 .pdf .pdf-main{
     max-width: 100%;
     width: 800px;
-
 }
 @media (max-width: 800px){
 	
     .video{
         margin-top: 100px;
-    }
-}
-
-@media (max-width: 500px){
-	
-    .horizontal-container1, .horizontal-container2{
-        display:block;
-        margin: auto;
     }
 }
 

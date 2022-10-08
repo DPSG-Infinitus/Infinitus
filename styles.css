@@ -242,15 +242,11 @@ body a {
 
 .text_div {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.text_image {
-    max-width: 80%;
-    width: 1600px;
+    color: #C7C9CA;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Bahnschrift', sans-serif;
     margin-top: 80px;
     z-index: 2;
 }

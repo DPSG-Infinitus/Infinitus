@@ -242,7 +242,7 @@ body a {
 
 .text_div {
     position: relative;
-    color: #C7C9CA;
+    color: rgba(240, 240, 240, 0.7);
     font-size: 30px;
     margin-left: 100px;
     margin-right: 100px;

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gotham-black');
-@import url('http://fonts.cdnfonts.com/css/bahnschrift');
 
 html {
     scroll-behavior: smooth;
@@ -11,7 +10,6 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow-x: hidden;
     text-align: center;
-
 }
 
 body a {
@@ -32,7 +30,6 @@ body a {
     justify-content: center;
     text-align: center;
     z-index: 5;
-
 }
 
 .particles {
@@ -53,7 +50,6 @@ body a {
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 .infinitus-logo {
@@ -62,8 +58,6 @@ body a {
     margin-top: 240px;
     margin-bottom: 120px;
     z-index: 2;
-
-
 }
 
 .countdown {
@@ -74,7 +68,6 @@ body a {
     font-family: 'Gotham Black', sans-serif;
     margin: auto;
     font-weight: 1000;
-
 }
 
 .countdown div {
@@ -189,7 +182,6 @@ body a {
     margin-top: 120px;
     cursor: url("assets/cursor-02.svg") 20 20, auto;
     max-width: 100%;
-
 }
 
 .button a {
@@ -226,7 +218,6 @@ body a {
     margin-top: 20px;
     margin-left: 12px;
     margin-right: 12px;
-
     z-index: 2;
 }
 
@@ -246,17 +237,22 @@ body a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 2;
 }
 
 .text_div {
     position: relative;
-    color: #C7C9CA;
-    font-size: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text_image {
+    max-width: 80%;
+    width: 1600px;
     margin-top: 80px;
-    font-family: 'Bahnschrift', sans-serif;
-                                                
+    z-index: 2;
 }
 
 .main-container {
@@ -307,7 +303,6 @@ body a {
     justify-content: center;
     margin-top: 20px;
     height: 720px;
-
 }
 
 .pdf .pdf-main {
@@ -341,11 +336,6 @@ body a {
     .button-class {
         margin-left: auto;
         margin-right: auto;
-    }
-    
-    .text_div{
-        margin: auto;
-        margin-top: 100px;
     }
 }
 

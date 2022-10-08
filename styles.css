@@ -1,42 +1,26 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gotham-black');
 
-html{
+html {
     scroll-behavior: smooth;
+    cursor: url("assets/cursor-02.svg") 20 20, auto;
 }
 
-body{
-    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow-x: hidden;
-    text-align: center;	
+    text-align: center;
+
 }
 
 body a {
     text-decoration: none;
 }
 
-canvas {
-    display: block;
-    vertical-align: bottom;
-    margin-top: 100px;
-  }
-
-.background-1{
-    padding-left: -2px;
-}
-  
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-
-.topnav{
+.topnav {
     position: fixed;
     width: 100%;
-    background-color: #32325A;
+    background-color: #2e2e54;
     z-index: 1;
     height: 100px;
     top: 0;
@@ -46,43 +30,53 @@ canvas {
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 10;
+    z-index: 5;
 
 }
 
-.img-logo{
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img-logo {
     max-width: 80%;
     width: 540px;
 }
 
-.infinitus{
+.infinitus {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 
 .infinitus-logo {
     max-width: 80%;
-    width: 720px; 
+    width: 720px;
     margin-top: 240px;
     margin-bottom: 120px;
     z-index: 2;
-  }
 
-.countdown{
+
+}
+
+.countdown {
     position: relative;
     display: flex;
     justify-content: center;
     margin-top: -10px;
-    font-family:'Gotham Black', sans-serif;
+    font-family: 'Gotham Black', sans-serif;
     margin: auto;
     font-weight: 1000;
 
 }
 
-.countdown div{
+.countdown div {
     color: #fff;
     flex-basis: 100px;
     z-index: 2;
@@ -94,125 +88,125 @@ canvas {
     margin-left: 20px;
 }
 
-.countdown div span{
+.countdown div span {
     padding-left: 25px;
 }
 
-#day{
-    background-image: linear-gradient(
-  180deg,
-  hsl(0deg 100% 60%) 0%,
-  hsl(6deg 100% 59%) 10%,
-  hsl(12deg 100% 57%) 20%,
-  hsl(18deg 100% 56%) 30%,
-  hsl(24deg 100% 55%) 40%,
-  hsl(30deg 100% 54%) 50%,
-  hsl(36deg 100% 52%) 60%,
-  hsl(42deg 100% 51%) 70%,
-  hsl(48deg 100% 50%) 80%,
-  hsl(54deg 100% 48%) 90%,
-  hsl(60deg 100% 47%) 100%
-);
-background-size: auto auto;
-background-clip: border-box;
-background-size: 200% auto;
-color: #fff;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+#day {
+    background-image: linear-gradient(180deg,
+            hsl(0deg 100% 60%) 0%,
+            hsl(6deg 100% 59%) 10%,
+            hsl(12deg 100% 57%) 20%,
+            hsl(18deg 100% 56%) 30%,
+            hsl(24deg 100% 55%) 40%,
+            hsl(30deg 100% 54%) 50%,
+            hsl(36deg 100% 52%) 60%,
+            hsl(42deg 100% 51%) 70%,
+            hsl(48deg 100% 50%) 80%,
+            hsl(54deg 100% 48%) 90%,
+            hsl(60deg 100% 47%) 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#hour{
-    background-image: linear-gradient(
-  180deg,
-  hsl(60deg 100% 47%) 0%,
-  hsl(64deg 100% 49%) 10%,
-  hsl(67deg 100% 51%) 20%,
-  hsl(71deg 100% 53%) 30%,
-  hsl(74deg 100% 55%) 40%,
-  hsl(78deg 100% 56%) 50%,
-  hsl(82deg 100% 58%) 60%,
-  hsl(85deg 100% 60%) 70%,
-  hsl(89deg 100% 62%) 80%,
-  hsl(92deg 100% 64%) 90%,
-  hsl(96deg 100% 66%) 100%
-);
-background-size: auto auto;
-background-clip: border-box;
-background-size: 200% auto;
-color: #fff;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+#hour {
+    background-image: linear-gradient(180deg,
+            hsl(60deg 100% 47%) 0%,
+            hsl(64deg 100% 49%) 10%,
+            hsl(67deg 100% 51%) 20%,
+            hsl(71deg 100% 53%) 30%,
+            hsl(74deg 100% 55%) 40%,
+            hsl(78deg 100% 56%) 50%,
+            hsl(82deg 100% 58%) 60%,
+            hsl(85deg 100% 60%) 70%,
+            hsl(89deg 100% 62%) 80%,
+            hsl(92deg 100% 64%) 90%,
+            hsl(96deg 100% 66%) 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#min{
-    background-image: linear-gradient(
-  180deg,
-  hsl(96deg 100% 66%) 0%,
-  hsl(104deg 100% 63%) 10%,
-  hsl(113deg 100% 61%) 20%,
-  hsl(121deg 100% 59%) 30%,
-  hsl(130deg 100% 57%) 40%,
-  hsl(138deg 100% 55%) 50%,
-  hsl(146deg 100% 52%) 60%,
-  hsl(155deg 100% 50%) 70%,
-  hsl(163deg 100% 48%) 80%,
-  hsl(171deg 100% 45%) 90%,
-  hsl(180deg 100% 43%) 100%
-);
-background-size: auto auto;
-background-clip: border-box;
-background-size: 200% auto;
-color: #fff;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+#min {
+    background-image: linear-gradient(180deg,
+            hsl(96deg 100% 66%) 0%,
+            hsl(104deg 100% 63%) 10%,
+            hsl(113deg 100% 61%) 20%,
+            hsl(121deg 100% 59%) 30%,
+            hsl(130deg 100% 57%) 40%,
+            hsl(138deg 100% 55%) 50%,
+            hsl(146deg 100% 52%) 60%,
+            hsl(155deg 100% 50%) 70%,
+            hsl(163deg 100% 48%) 80%,
+            hsl(171deg 100% 45%) 90%,
+            hsl(180deg 100% 43%) 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#sec{
-    background-image: linear-gradient(
-  180deg,
-  hsl(180deg 100% 43%) 0%,
-  hsl(187deg 100% 46%) 10%,
-  hsl(195deg 100% 49%) 20%,
-  hsl(202deg 100% 52%) 30%,
-  hsl(209deg 100% 55%) 40%,
-  hsl(217deg 100% 58%) 50%,
-  hsl(224deg 100% 61%) 60%,
-  hsl(231deg 100% 65%) 70%,
-  hsl(239deg 100% 67%) 80%,
-  hsl(246deg 100% 71%) 90%,
-  hsl(253deg 100% 74%) 100%
-);
-background-size: auto auto;
-background-clip: border-box;
-background-size: 200% auto;
-color: #fff;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+#sec {
+    background-image: linear-gradient(180deg,
+            hsl(180deg 100% 43%) 0%,
+            hsl(187deg 100% 46%) 10%,
+            hsl(195deg 100% 49%) 20%,
+            hsl(202deg 100% 52%) 30%,
+            hsl(209deg 100% 55%) 40%,
+            hsl(217deg 100% 58%) 50%,
+            hsl(224deg 100% 61%) 60%,
+            hsl(231deg 100% 65%) 70%,
+            hsl(239deg 100% 67%) 80%,
+            hsl(246deg 100% 71%) 90%,
+            hsl(253deg 100% 74%) 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.button{
+.button {
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 120px;
+    cursor: url("assets/cursor-02.svg") 20 20, auto;
+    max-width: 100%;
+
+}
+
+.button a {
+    cursor: url("assets/cursor-02.svg") 20 20, auto;
 }
 
 .button-class {
     align-items: center;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
     border: 0;
     border-radius: 24px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     box-sizing: border-box;
     color: #FFFFFF;
     display: flex;
-    font-family: 'Gotham medium' , serif;
-    font-size: 48px;
+    font-family: 'Gotham', serif;
+    font-weight: 600;
+    font-size: 36px;
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
@@ -223,95 +217,144 @@ background-clip: text;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    cursor: pointer;
     position: relative;
     text-align: center;
+    align-self: center;
+    cursor: url("assets/cursor-01.svg") 20 20, auto;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+
     z-index: 2;
-  }
-  
+}
+
 .button-class:active,
 .button-class:hover {
     outline: 0;
-    background-image: linear-gradient(144deg,#00DDEB, #5B42F3 50%, #AF40FF);
-  }
+    background-image: linear-gradient(144deg, #00DDEB, #5B42F3 50%, #AF40FF);
+    cursor: url("assets/cursor-01.svg") 20 20, auto;
+}
 
 
-.video{
+.video {
     position: relative;
     display: flex;
     width: 100%;
+    margin-top: 120px;
+    align-items: center;
     justify-content: center;
-    margin-top: 100px;
-}
-.teaser-vid{
-    max-width: 100%;
-    width: 720px;
+    text-align: center;
 }
 
-.main-container{
+.text_div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.text_image {
+    max-width: 80%;
+    width: 1600px;
+    margin-top: 80px;
+    z-index: 2;
+
+
+}
+
+.main-container {
     padding-top: 100px;
 }
 
-.horizontal-container1{
+.horizontal-container1 {
     position: relative;
     display: flex;
     justify-content: center;
     max-width: 100%;
 }
 
-.horizontal-container2{
+.horizontal-container2 {
     position: relative;
     display: flex;
     justify-content: center;
     max-width: 100%;
 }
+
 .box1-1,
 .box2-1,
 .box3-1,
 .box4-1 {
     padding: 10px;
     max-width: 100%;
-    width: 250px;
+    width: 400PX;
+    height: 400px
 }
 
-#creative{
+#creative {
     margin-top: 100px;
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-#creative-events{
-    color: #fff;
+#creative-events {
+    color: rgba(240, 240, 240, 0.7);
     font-size: 50px;
-    font-family: 'Crimson Text' , serif;
+    font-family: 'Gotham Black', sans-serif;
     font-weight: bold;
 }
 
-.pdf{
+.pdf {
     position: relative;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    height: 1000px;
+    height: 720px;
+
 }
 
-.pdf .pdf-main{
+.pdf .pdf-main {
     max-width: 100%;
     width: 800px;
-
+    height: 600px
 }
-@media (max-width: 800px){
-	
-    .video{
+
+@media (max-width: 800px) {
+
+    .video {
         margin-top: 100px;
     }
 }
 
-@media (max-width: 500px){
-	
-    .horizontal-container1, .horizontal-container2{
-        display:block;
+@media (max-width: 800px) {
+
+    .horizontal-container1,
+    .horizontal-container2 {
+        display: block;
         margin: auto;
     }
+}
+
+@media (max-width: 600px) {
+
+    .button {
+        display: block;
+    }
+
+    .button-class {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.creds {
+    font-size: 30px;
+    color: rgb(126, 126, 183);
+    text-align: center;
+    font-family: 'Gotham';
+    font-weight: 500;
+    height: 80px;
 }

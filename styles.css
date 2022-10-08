@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gotham-black');
+@import url('http://fonts.cdnfonts.com/css/bahnschrift');
 
 html {
     scroll-behavior: smooth;
@@ -249,20 +250,13 @@ body a {
 
 .text_div {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.text_image {
-    max-width: 80%;
-    width: 1600px;
+    color: #C7C9CA;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 80px;
-    z-index: 2;
-
-
+    font-family: 'Bahnschrift', sans-serif;
+                                                
 }
 
 .main-container {
@@ -347,6 +341,11 @@ body a {
     .button-class {
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .text_div{
+        margin: auto;
+        margin-top: 100px;
     }
 }
 

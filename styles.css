@@ -323,28 +323,26 @@ body a {
 .sponsors1{
     position: relative;
     display: flex;
-    justify-content: center;
     width: 100%;
     margin: 100px;
+}
+
+.sponsor-images{
+    margin: 100px;
+    flex-basis: 100px;
+
 }
 
 .sponsor1{
     max-width: 400px;
     height: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 50px;
+    width: 300px;
 }
 
 .sponsor2{
     max-width: 400px;
     height: 100px;
-    margin: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 50px;
-    margin-right: 100px;
+    width: 300px;
 }
 
 
@@ -352,6 +350,10 @@ body a {
 
     .video {
         margin-top: 100px;
+    }
+
+    .sponsors{
+        display: block;
     }
 }
 
@@ -475,6 +477,5 @@ body a {
     font-style: italic;
     font-display: swap;
 }
-
 
 

@@ -330,6 +330,7 @@ body a {
 
 .sponsor1{
     max-width: 400px;
+    width: 300px;
     height: 100px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -339,6 +340,7 @@ body a {
 
 .sponsor2{
     max-width: 400px;
+    width: 300px;
     height: 100px;
     margin: 100px;
     margin-top: 100px;

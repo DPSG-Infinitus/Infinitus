@@ -308,6 +308,46 @@ body a {
     height: 600px
 }
 
+.sponsors{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Gotham';
+    font-weight: 900;
+    height: auto;
+}
+
+.sponsors1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 100px;
+}
+
+.sponsor1{
+    max-width: 400px;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.sponsor2{
+    max-width: 400px;
+    height: 100px;
+    margin: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+
 @media (max-width: 800px) {
 
     .video {
@@ -435,3 +475,6 @@ body a {
     font-style: italic;
     font-display: swap;
 }
+
+
+

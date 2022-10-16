@@ -256,14 +256,9 @@ body a {
     padding-top: 100px;
 }
 
-.horizontal-container1 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-}
-
-.horizontal-container2 {
+.horizontal-container1,
+.horizontal-container2,
+.horizontal-container3 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -273,7 +268,8 @@ body a {
 .box1-1,
 .box2-1,
 .box3-1,
-.box4-1 {
+.box4-1,
+.box5-1 {
     padding: 10px;
     max-width: 100%;
     width: 400PX;
@@ -360,7 +356,8 @@ body a {
 @media (max-width: 800px) {
 
     .horizontal-container1,
-    .horizontal-container2 {
+    .horizontal-container2,
+    .horizontal-container3 {
         display: block;
         margin: auto;
     }

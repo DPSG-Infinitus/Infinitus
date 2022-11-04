@@ -53,28 +53,27 @@
 
         <!-- Infinitus Logo -->
         <div class="infinitus">
-            <img src="assets/Asset 6.png" alt="Infinitus 2022" class="infinitus-logo">
+            <img src="assets/Asset 6.png" alt="Infinitus 2022" class="infinitus-logo" id="infinitus_logo">
         </div>
 
 
-
         <!-- Countdown -->
-        <div class="countdown">
+        <div class="countdown" id="counter">
             <div>
                 <p id="day"></p>
-                <span>Days</span>
+                <span id="day_text" hidden>Days</span>
             </div>
             <div>
                 <p id="hour"></p>
-                <span>Hours</span>
+                <span id="hour_text" hidden>Hours</span>
             </div>
             <div>
                 <p id="min"></p>
-                <span>Minutes</span>
+                <span id="min_text" hidden>Minutes</span>
             </div>
             <div>
                 <p id="sec"></p>
-                <span>Seconds</span>
+                <span id="sec_text" hidden>Seconds</span>
             </div>
         </div>
 
@@ -91,6 +90,35 @@
                 // Find the distance between now and the count down date
                 var distance = countDownDate - now;
 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("day").hidden = true;
+                    document.getElementById("hour").hidden = true;
+                    document.getElementById("min").hidden = true;
+                    document.getElementById("sec").hidden = true;
+                    document.getElementById("day_text").hidden = true;
+                    document.getElementById("hour_text").hidden = true;
+                    document.getElementById("min_text").hidden = true;
+                    document.getElementById("sec_text").hidden = true;
+                    document.getElementById("infinitus_logo").style.marginBottom = "0px";
+                    document.getElementById("photo_btn").hidden = false;
+
+
+                    // document.getElementById("day").innerHTML = "00";
+                    // document.getElementById("hour").innerHTML = "00";
+                    // document.getElementById("min").innerHTML = "00";
+                    // document.getElementById("sec").innerHTML = "00";
+                }
+                else {
+                    document.getElementById("day_text").hidden = false;
+                    document.getElementById("hour_text").hidden = false;
+                    document.getElementById("min_text").hidden = false;
+                    document.getElementById("sec_text").hidden = false;
+                    document.getElementById("register").hidden = false;
+                    document.getElementById("infinitus_logo").style.marginBottom = "120px";
+                }
+
+
                 // Time calculations for days, hours, minutes and seconds
                 var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
                 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
@@ -104,24 +132,24 @@
                 document.getElementById("sec").innerHTML = seconds;
 
                 // If the count down is finished, write some text
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("day").innerHTML = "00";
-                    document.getElementById("hour").innerHTML = "00";
-                    document.getElementById("min").innerHTML = "00";
-                    document.getElementById("sec").innerHTML = "00";
-                }
+
             }, 1000);
         </script>
 
+
         <!-- Buttons -->
         <div class="button">
-            <a href="https://bit.ly/infinitus2k22">
+            <a href="photo.html" id="photo_btn" hidden tabindex="-1">
+                <button class="button-class" role="button">
+                    Photos
+                </button>
+            </a>
+            <a href="https://bit.ly/infinitus2k22" id="register_btn" hidden tabindex="-1">
                 <button class="button-class" role="button">
                     Register
                 </button>
             </a>
-            <a href="#creative-events">
+            <a href="#creative-events" tabindex="-1">
                 <button class="button-class" role="button">
                     Events
                 </button>
@@ -205,16 +233,13 @@
         <iframe class="pdf-main" src="assets/ITF22_creatives.pdf" width="800" height="500"></iframe>
     </div>
 
-    <div class="sponsors">
-        <div class="sponsors-name">
-            Sponsors
-        </div>
+    <div class="sponsor-text">
+        Sponsors
     </div>
     <br>
-    <div class="sponsor-images">
-        <a href="https://www.taskade.com"><img src="assets/taskade.png" alt="Taskade"
-                class="sponsor1"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.wolframalpha.com"><img src="assets/wolfram.png" alt="Wolfram" class="sponsor2"></a>
+    <div class="sponsor-img-div">
+        <a href="https://www.taskade.com"><img src="assets/taskade.png" alt="Taskade" class="sponsor-img"></a>
+        <a href="https://www.wolframalpha.com"><img src="assets/wolfram.png" alt="Wolfram" class="sponsor-img"></a>
     </div>
 
     <div class="creds">
@@ -224,3 +249,5 @@
 </body>
 
 </html>
+
+<!-- update cursor, carousel, button animation, cursor animation, remake boxes -->

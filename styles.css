@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gotham');
-
 html {
     scroll-behavior: smooth;
     cursor: url("assets/cursor-02.svg") 20 20, auto;
+    user-select: none;
 }
 
 body {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: linear-gradient(#0A0A14, #1E1E32);
     overflow-x: hidden;
     text-align: center;
 }
@@ -19,9 +17,9 @@ body a {
 .topnav {
     position: fixed;
     width: 100%;
-    background-color: #2e2e54;
+    background-color: #2e2e5450;
     z-index: 1;
-    height: 100px;
+    height: 120px;
     top: 0;
     overflow: hidden;
     right: 0;
@@ -30,6 +28,7 @@ body a {
     justify-content: center;
     text-align: center;
     z-index: 5;
+    backdrop-filter: blur(50px)
 }
 
 .particles {
@@ -41,7 +40,12 @@ body a {
 
 .img-logo {
     max-width: 80%;
-    width: 540px;
+    width: 640px;
+}
+
+.img-logo-2 {
+    max-width: 80%;
+    width: 560px;
 }
 
 .infinitus {
@@ -56,7 +60,7 @@ body a {
     max-width: 80%;
     width: 720px;
     margin-top: 240px;
-    margin-bottom: 120px;
+    margin-bottom: 0px;
     z-index: 2;
 }
 
@@ -219,6 +223,7 @@ body a {
     margin-left: 12px;
     margin-right: 12px;
     z-index: 2;
+    transition: 0.5s ease;
 }
 
 .button-class:active,
@@ -304,11 +309,11 @@ body a {
     height: 600px
 }
 
-.sponsors{
+.sponsor-text{
     position: relative;
     display: flex;
     justify-content: center;
-    color: #fff;
+    color: #f0f0f0;
     width: 100%;
     font-size: 30px;
     font-family: 'Gotham';
@@ -316,29 +321,15 @@ body a {
     height: auto;
 }
 
-.sponsors1{
-    position: relative;
-    display: flex;
-    width: 100%;
-    margin: 100px;
-}
-
-.sponsor-images{
-    margin: 100px;
+.sponsor-img-div{
     flex-basis: 100px;
-
+    margin-bottom: 80px;
 }
 
-.sponsor1{
+.sponsor-img{
     max-width: 400px;
     height: 100px;
-    width: 300px;
-}
-
-.sponsor2{
-    max-width: 400px;
-    height: 100px;
-    width: 300px;
+    margin: 16px;
 }
 
 
@@ -478,35 +469,45 @@ body a {
 
 .text_div_1{
     position: relative;
-    color: #fff;
+    color: #f0f0f0;
     font-size: 30px;
     margin-left: 100px;
     margin-right: 100px;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham';
     font-weight: 500;
-    margin-top: 80px;
+    margin-top: 160px;
     z-index: 2;
 }
 
 .slideshow-container {
-    max-width: 500px;
+    max-width: 80%;
     position: relative;
-    margin: auto;
+    margin: 80px;
     display: flex;
     justify-content: center;
+    justify-self: center;
+  }
+
+  .container-of-container {
+    max-width: 80%;
+    position: relative;
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: flex;
-    max-width: 500px;
+    max-width: 80%;
     height: auto;
     justify-content: center;
   }
   
   /* Next & previous buttons */
   .prev, .next {
-    cursor: pointer;
+    cursor: url("assets/cursor-01.svg") 20 20, auto;;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -517,7 +518,7 @@ body a {
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
+    transition: 0.5s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
 
@@ -537,7 +538,7 @@ body a {
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   
   /* Caption text */
@@ -562,14 +563,14 @@ body a {
   
   /* The dots/bullets/indicators */
   .dot {
-    cursor: pointer;
+    cursor: url("assets/cursor-01.svg") 20 20, auto;;
     height: 15px;
     width: 15px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.5s ease;
   }
   
   .active, .dot:hover {
